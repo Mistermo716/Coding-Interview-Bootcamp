@@ -13,11 +13,7 @@ function palindrome(str) {
   for (let char of str) {
     reversed = char + reversed;
   }
-  if (reversed === str) {
-    return true;
-  } else {
-    return false;
-  }
+  return str === reversed;
 }
 
 module.exports = palindrome;
